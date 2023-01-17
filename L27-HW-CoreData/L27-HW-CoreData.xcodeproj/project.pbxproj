@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		1200B0BF29743E95007471F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0BE29743E95007471F0 /* AppDelegate.swift */; };
 		1200B0C129743E95007471F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0C029743E95007471F0 /* SceneDelegate.swift */; };
-		1200B0C329743E95007471F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0C229743E95007471F0 /* ViewController.swift */; };
 		1200B0C629743E95007471F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200B0C429743E95007471F0 /* Main.storyboard */; };
 		1200B0C929743E95007471F0 /* L27_HW_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0C729743E95007471F0 /* L27_HW_CoreData.xcdatamodeld */; };
 		1200B0CB29743E98007471F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1200B0CA29743E98007471F0 /* Assets.xcassets */; };
 		1200B0CE29743E98007471F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200B0CC29743E98007471F0 /* LaunchScreen.storyboard */; };
+		1200B0DA2975BFBB007471F0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0D92975BFBB007471F0 /* CategoryViewController.swift */; };
+		1200B0DC2975C009007471F0 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200B0DB2975C009007471F0 /* ToDoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1200B0BB29743E95007471F0 /* L27-HW-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "L27-HW-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1200B0BE29743E95007471F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1200B0C029743E95007471F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1200B0C229743E95007471F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1200B0C529743E95007471F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1200B0C829743E95007471F0 /* L27_HW_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = L27_HW_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		1200B0CA29743E98007471F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1200B0CD29743E98007471F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1200B0CF29743E98007471F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1200B0D92975BFBB007471F0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		1200B0DB2975C009007471F0 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		1200B0BD29743E95007471F0 /* L27-HW-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				1200B0BE29743E95007471F0 /* AppDelegate.swift */,
-				1200B0C029743E95007471F0 /* SceneDelegate.swift */,
-				1200B0C229743E95007471F0 /* ViewController.swift */,
-				1200B0C429743E95007471F0 /* Main.storyboard */,
+				1200B0D52975BC3C007471F0 /* Models */,
+				1200B0D72975BC7E007471F0 /* Views */,
+				1200B0D82975BC97007471F0 /* Controllers */,
+				1200B0D62975BC5F007471F0 /* AppDelgates */,
 				1200B0CA29743E98007471F0 /* Assets.xcassets */,
-				1200B0CC29743E98007471F0 /* LaunchScreen.storyboard */,
 				1200B0CF29743E98007471F0 /* Info.plist */,
-				1200B0C729743E95007471F0 /* L27_HW_CoreData.xcdatamodeld */,
 			);
 			path = "L27-HW-CoreData";
+			sourceTree = "<group>";
+		};
+		1200B0D52975BC3C007471F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1200B0C729743E95007471F0 /* L27_HW_CoreData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1200B0D62975BC5F007471F0 /* AppDelgates */ = {
+			isa = PBXGroup;
+			children = (
+				1200B0BE29743E95007471F0 /* AppDelegate.swift */,
+				1200B0C029743E95007471F0 /* SceneDelegate.swift */,
+			);
+			path = AppDelgates;
+			sourceTree = "<group>";
+		};
+		1200B0D72975BC7E007471F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1200B0CC29743E98007471F0 /* LaunchScreen.storyboard */,
+				1200B0C429743E95007471F0 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1200B0D82975BC97007471F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1200B0D92975BFBB007471F0 /* CategoryViewController.swift */,
+				1200B0DB2975C009007471F0 /* ToDoListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1200B0C329743E95007471F0 /* ViewController.swift in Sources */,
+				1200B0DA2975BFBB007471F0 /* CategoryViewController.swift in Sources */,
 				1200B0C929743E95007471F0 /* L27_HW_CoreData.xcdatamodeld in Sources */,
 				1200B0BF29743E95007471F0 /* AppDelegate.swift in Sources */,
+				1200B0DC2975C009007471F0 /* ToDoListViewController.swift in Sources */,
 				1200B0C129743E95007471F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
